@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import getpass
+from getpass import getpass
 
 NORMAL = '\033[0m'
 CYAN = '\033[0;36m'
@@ -21,7 +21,7 @@ def image():
 image()
 
 def choisir_mots():
-    mots = getpass.getpass(f"\n{CYAN}Choisie ton mots secret >{NORMAL} ")
+    mots = getpass(f"\n{CYAN}Choisie ton mots secret >{NORMAL} ")
     return mots
 
 def init_mot_cache(mot):
